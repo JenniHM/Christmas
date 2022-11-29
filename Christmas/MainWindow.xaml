@@ -1,0 +1,58 @@
+﻿<Window x:Class="Christmas.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Christmas"
+        mc:Ignorable="d"
+        Title="Christmas Calendar" Height="672.454" Width="881.305">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="C:\Users\jenni\source\repos\Christmas\Christmas\Pics\background.jpg" Opacity="0.3"/>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="859*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="btn1" Content="1" HorizontalAlignment="Left" Height="39" Margin="732,30,0,0" VerticalAlignment="Top" Width="76" Click="btn1_Click"/>
+        <Button x:Name="btn2" Content="2" HorizontalAlignment="Left" Height="39" Margin="18,514,0,0" VerticalAlignment="Top" Width="76" Click="btn2_Click"/>
+        <Button x:Name="btn3" Content="3" HorizontalAlignment="Left" Height="39" Margin="706,372,0,0" VerticalAlignment="Top" Width="76" Click="btn3_Click"/>
+        <Button x:Name="btn4" Content="4" HorizontalAlignment="Left" Height="39" Margin="532,478,0,0" VerticalAlignment="Top" Width="76" Click="btn4_Click"/>
+        <Button x:Name="btn5" Content="5" HorizontalAlignment="Left" Height="39" Margin="18,206,0,0" VerticalAlignment="Top" Width="76" Click="btn5_Click"/>
+        <Button x:Name="btn6" Content="6" HorizontalAlignment="Left" Height="39" Margin="147,41,0,0" VerticalAlignment="Top" Width="76" Click="btn6_Click"/>
+        <Button x:Name="btn7" Content="7" HorizontalAlignment="Left" Height="39" Margin="520,16,0,0" VerticalAlignment="Top" Width="76" Click="btn7_Click"/>
+        <Button x:Name="btn8" Content="8" HorizontalAlignment="Left" Height="39" Margin="34,16,0,0" VerticalAlignment="Top" Width="76" Click="btn8_Click"/>
+        <Button x:Name="btn9" Content="9" HorizontalAlignment="Left" Height="39" Margin="77,448,0,0" VerticalAlignment="Top" Width="76" Click="btn9_Click"/>
+        <Button x:Name="btn10" Content="10" HorizontalAlignment="Left" Height="39" Margin="307,473,0,0" VerticalAlignment="Top" Width="76" Click="btn10_Click"/>
+        <Button x:Name="btn11" Content="11" HorizontalAlignment="Left" Height="39" Margin="417,66,0,0" VerticalAlignment="Top" Width="76" Click="btn11_Click"/>
+        <Button x:Name="btn12" Content="12" HorizontalAlignment="Left" Height="39" Margin="77,281,0,0" VerticalAlignment="Top" Width="76" Click="btn12_Click"/>
+        <Button x:Name="btn13" Content="13" HorizontalAlignment="Left" Height="39" Margin="417,514,0,0" VerticalAlignment="Top" Width="76" Click="btn13_Click"/>
+        <Button x:Name="btn14" Content="14" HorizontalAlignment="Left" Height="39" Margin="767,281,0,0" VerticalAlignment="Top" Width="76" Click="btn14_Click"/>
+        <Button x:Name="btn15" Content="15" HorizontalAlignment="Left" Height="39" Margin="747,206,0,0" VerticalAlignment="Top" Width="76" Click="btn15_Click"/>
+        <Button x:Name="btn16" Content="16" HorizontalAlignment="Left" Height="39" Margin="329,16,0,0" VerticalAlignment="Top" Width="76" Click="btn16_Click"/>
+        <Button x:Name="btn17" Content="17" HorizontalAlignment="Left" Height="39" Margin="195,492,0,0" VerticalAlignment="Top" Width="76" Click="btn17_Click"/>
+        <Button x:Name="btn18" Content="18" HorizontalAlignment="Left" Height="39" Margin="747,461,0,0" VerticalAlignment="Top" Width="76" Click="btn18_Click"/>
+        <Button x:Name="btn19" Content="19" HorizontalAlignment="Left" Height="39" Margin="18,91,0,0" VerticalAlignment="Top" Width="76" Click="btn19_Click"/>
+        <Button x:Name="btn20" Content="20" HorizontalAlignment="Left" Height="39" Margin="247,80,0,0" VerticalAlignment="Top" Width="76" Click="btn20_Click"/>
+        <Button x:Name="btn21" Content="21" HorizontalAlignment="Left" Height="39" Margin="685,514,0,0" VerticalAlignment="Top" Width="76" Click="btn21_Click"/>
+        <Button x:Name="btn22" Content="22" HorizontalAlignment="Left" Margin="113,123,0,415.6" Width="76" Click="btn22_Click"/>
+        <Button x:Name="btn23" Content="23" HorizontalAlignment="Left" Height="39" Margin="18,372,0,0" VerticalAlignment="Top" Width="76" Click="btn23_Click"/>
+        <Button x:Name="btn24" Content="24" HorizontalAlignment="Left" Height="75" Margin="632,87,0,0" VerticalAlignment="Top" Width="129" Click="btn24_Click"/>
+        <MediaElement Source="C:\Users\jenni\source\repos\Christmas\Christmas\Music\xmasVideo.mp4" HorizontalAlignment="Left" Height="292" Margin="195,181,0,0" VerticalAlignment="Top" Width="470" x:Name="me"
+              MediaEnded="MediaElement_MediaEnded"
+              LoadedBehavior="Play"/>
+        <StackPanel Grid.Row="1">
+            <Label Name="lblStatus" Content="Open up and enjoy!" HorizontalContentAlignment="Center" Margin="5" />
+            <WrapPanel HorizontalAlignment="Center" Height="30">
+                <Button Name="btnPlay" Background="YellowGreen" Click="btnPlay_Click">Play</Button>
+                <Button Name="btnPause" Background="Gold" Margin="5,0" Click="btnPause_Click">Pause</Button>
+                <Button Name="btnStop" Background="IndianRed" Click="btnStop_Click">Stop</Button>
+            </WrapPanel>
+        </StackPanel>
+
+
+    </Grid>
+</Window>
